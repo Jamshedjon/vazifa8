@@ -3,6 +3,7 @@ import MainLayout from "./layout/MainLayout";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
+import Article from "./pages/Article";
 
 function App() {
     const routes = createBrowserRouter([
@@ -21,6 +22,10 @@ function App() {
                 {
                     path: "/contact",
                     element: <Contact />,
+                },
+                {
+                    path: "/article/:id",
+                    element: <Article />,
                 },
             ],
         },
